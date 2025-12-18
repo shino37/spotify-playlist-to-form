@@ -2,14 +2,6 @@
   "name": "spotify_to_form",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/shino37/spotify_to_form#readme",
-  "bugs": {
-    "url": "https://github.com/shino37/spotify_to_form/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shino37/spotify_to_form.git"
-  },
   "license": "ISC",
   "author": "",
   "type": "module",
