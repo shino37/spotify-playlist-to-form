@@ -1,0 +1,24 @@
+{
+  "name": "spotify_to_form",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/shino37/spotify_to_form#readme",
+  "bugs": {
+    "url": "https://github.com/shino37/spotify_to_form/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shino37/spotify_to_form.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
