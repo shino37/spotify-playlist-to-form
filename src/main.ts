@@ -27,7 +27,13 @@ export type formatedTrack = {
   addedBy: string | undefined;
 }
 
-const playlistId = '2WcwsDau9GtXkSJtSdnOce'
+export function requiredEnv(name: string): string {
+  const v = process.env[name];
+  if (!v) throw new Error(`Missing env: ${name}`);
+  return v;
+}
+
+const playlistId = requiredEnv("PLAYLIST_ID");
 
 const playlist: Playlist = await getPlaylist.getPlaylist(playlistId).catch(console.error); 
 const userIds = Array.from(
@@ -62,3 +68,4 @@ createForms(
   description,
   formatedTracks || []
 ).catch(console.error);
+

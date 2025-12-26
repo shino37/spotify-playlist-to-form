@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { requiredEnv } from "./main.js";
 
 type TokenCache = {
   accessToken: string;
@@ -6,12 +7,6 @@ type TokenCache = {
 };
 
 let cache: TokenCache | null = null;
-
-function requiredEnv(name: string): string {
-  const v = process.env[name];
-  if (!v) throw new Error(`Missing env: ${name}`);
-  return v;
-}
 
 async function fetchAccessToken(): Promise<TokenCache> {
   const clientId = requiredEnv("SPOTIFY_CLIENT_ID");

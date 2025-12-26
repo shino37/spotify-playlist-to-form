@@ -1,17 +1,11 @@
 import process from "node:process";
 import { authenticate } from "@google-cloud/local-auth";
 import "dotenv/config";
-import type { formatedTrack } from "./main.js";
+import { requiredEnv, type formatedTrack } from "./main.js";
 
 const SCOPES = [
   "https://www.googleapis.com/auth/forms.body", // フォーム作成・編集
 ];
-
-function requiredEnv(name: string): string {
-  const v = process.env[name];
-  if (!v) throw new Error(`Missing env: ${name}`);
-  return v;
-}
 
 const credentialsPath = requiredEnv("CREDENTIALS_PATH");
 
