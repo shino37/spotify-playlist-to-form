@@ -39,6 +39,11 @@ CREDENTIALS_PATH=./credentials.json
 ```
 
 ### 実行編
+SpotifyのURLからプレイリストのIDを取得して環境変数に設定しよう
+```.env
+PLAYLIST_ID=playlist_id
+```
+以下のコマンドを実行してプログラムを実行しよう
 ```
 npx tsc
 node dist/main.js
