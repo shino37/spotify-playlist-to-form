@@ -1,9 +1,14 @@
-### 使い方
-#### 環境構築編
+# 楽曲投票フォーム自動作成ツール
+
+## 概要
+Spotifyのプレイリストから楽曲名、アーティスト名、追加者を取得し、Google Formsで投票フォームを作成することができる
+
+## 使い方
+### 環境構築編
 1. [Node.js](https://nodejs.org/ja/download)をインストールしよう
 2. `npm install --save-dev typescript @types/node`でTypeScriptとモジュールをインストールしよう
 
-#### Spotify API編
+### Spotify API編
 1. [Spotify for Developer](https://developer.spotify.com/)にサインインしよう
 2. 右上のアカウントアイコンから、ダッシュボードを開こう
 3. Create Appからアプリを作成しよう
@@ -17,7 +22,7 @@ SPOTIFY_CLIENT_ID=your_client_id
 SPOTIFY_CLIENT_SECRET=your_client_secret
 ```
 
-#### Google Forms API編
+### Google Forms API編
 1. Google Cloudのアカウントを作ろう
 2. 左上のハンバーガーメニューから、APIとサービス＞ライブラリを選択しよう
 3. Google Forms APIを検索して有効にしよう
@@ -33,7 +38,7 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
 CREDENTIALS_PATH=./credentials.json
 ```
 
-#### 実行編
+### 実行編
 ```
 npx tsc
 node dist/main.js
